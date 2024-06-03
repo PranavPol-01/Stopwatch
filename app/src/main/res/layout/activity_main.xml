@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sw_bg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="00:00:00"
+        android:textColor="#0C0606"
+        android:textSize="48sp" />
+
+    <Button
+        android:id="@+id/buttonPlayPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_play" />
+
+    <Button
+        android:id="@+id/buttonLap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPlayPause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Lap"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Restart"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listViewLaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRestart"
+        android:layout_marginTop="16dp"
+        android:background="#3303A9F4"
+        android:cacheColorHint="#F6F0F0" />
+
+</RelativeLayout>
